@@ -9,6 +9,8 @@ export class SearchComponent implements OnInit {
 
   constructor() { }
 
+  categories =['pierwsza', 'druga', 'trzecia'];
+
   ngOnInit(): void {
   }
 

@@ -1,3 +1,28 @@
+
+<mat-toolbar color="primary">
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>info</mat-icon>
+      <span>O nas</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>settings</mat-icon>
+      <span>Usługi</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>contacts</mat-icon>
+      <span>Kontakt</span>
+    </button>
+  </mat-menu>
+  <a [routerLink]="['/']">ngAuction</a>
+  <div class="fill"></div>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+</mat-toolbar>
+
+
+<!--
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -19,4 +44,4 @@
     </div>
 
   </div>
-</nav>
+</nav>-->
